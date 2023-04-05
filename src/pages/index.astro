@@ -1,4 +1,5 @@
 ---
+const pageTitle = "Home Page";
 ---
 
 <html lang="en">
@@ -7,10 +8,10 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<h1>My Astro Site</h1>
+		<h1>{pageTitle}</h1>
 		<div>
 			<p>Vue.js</p>
 			<p>React.js</p>
@@ -20,7 +21,7 @@
 			<p>Javascript</p>
 			<p>Laravel</p>
 			<p>PHP</p>
-			
+
 		</div>
 		
 	</body>
