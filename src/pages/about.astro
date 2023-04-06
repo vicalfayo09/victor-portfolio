@@ -1,13 +1,16 @@
 ---
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
 const pageTitle = "About Me";
 const identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Technical Writer",
-  hobbies: ["photography", "birdwatching", "baseball"],
+  firstName: "Victor",
+  country: "Kenya",
+  occupation: "an IT technician at Mojis Media.Aspiring to be a full stack developer in the future",
+  hobbies: ["drumming", "photography", "watching football", "music", "gaming", "singing"],
 };
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Vue.js", "Laravel", "Java", "Flutter", "Dart", "Android", "PHP", "Graphics design", "Photo editing", "Videography", "Writing Docs"];
 
 
 const happy = true;
@@ -39,8 +42,7 @@ const textTransform = "upperCase";
         </style>
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
+        <Navigation />
 
 		<h1>{pageTitle}</h1>
 		<h2>... and my new Astro site!</h2>
@@ -52,7 +54,7 @@ const textTransform = "upperCase";
   <p>Here are a few facts about me:</p>
 <ul>
   <li>My name is {identity.firstName}.</li>
-  <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+  <li>I live in {identity.country} and I am {identity.occupation}.</li>
   {identity.hobbies.length >= 2 && 
     <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
   } 
@@ -66,5 +68,7 @@ const textTransform = "upperCase";
 {finished && <p>I finished this tutorial!</p>}
 
 {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+
+<Footer />
 	</body>
 </html>

@@ -1,5 +1,8 @@
 ---
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
 const pageTitle = "Home Page";
 ---
 
@@ -12,18 +15,8 @@ const pageTitle = "Home Page";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
+		<Navigation />
 		<h1>{pageTitle}</h1>
-		<div>
-			<p>Vue.js</p>
-			<p>React.js</p>
-			<p>Java</p>
-			<p>Flutter</p>
-			<p>Dart</p>
-			<p>Javascript</p>
-			<p>Laravel</p>
-			<p>PHP</p>
-
-		</div>
-		
+		<Footer />
 	</body>
 </html>
