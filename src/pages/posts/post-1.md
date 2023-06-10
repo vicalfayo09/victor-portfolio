@@ -22,6 +22,7 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 
 3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
 
+4. **Challenges faced**: The challenges I faced in understanding Astro were the compnetn and layouts subdvision as the back and forth from static to dynamic generation of content was confusing at first but I gained knowledge. 
 ## What's next
 
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
